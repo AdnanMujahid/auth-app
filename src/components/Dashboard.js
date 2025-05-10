@@ -21,14 +21,23 @@ function Dashboard() {
       <p style={welcomeStyle}>Welcome to your account!</p>
 
       <div style={tilesGridStyle}>
-        <div style={{ ...tileStyle, background: 'linear-gradient(to right, #667eea, #764ba2)' }}>
+        <div
+          style={{ ...tileStyle, background: 'linear-gradient(to right, #667eea, #764ba2)' }}
+          onClick={() => navigate('/devops')}
+        >
           DevOps
         </div>
-        <div style={{ ...tileStyle, background: 'linear-gradient(to right, #43cea2, #185a9d)' }}>
+        <div
+          style={{ ...tileStyle, background: 'linear-gradient(to right, #43cea2, #185a9d)' }}
+          onClick={() => navigate('/docker')}
+        >
           Docker
         </div>
-        <div style={{ ...tileStyle, background: 'linear-gradient(to right, #ff512f, #dd2476)' }}>
-          Author
+        <div
+          style={{ ...tileStyle, background: 'linear-gradient(to right, #ff512f, #dd2476)' }}
+          onClick={() => navigate('/container')}
+        >
+          Container
         </div>
       </div>
     </div>
